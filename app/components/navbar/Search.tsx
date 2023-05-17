@@ -2,13 +2,47 @@
 import { BiSearch } from "react-icons/bi"
 const Search = () => {
   return (
-    <div className="w-full cursor-pointer rounded-full border-[1px] py-2 shadow-sm transition hover:shadow-md md:w-auto">
+    <div
+      className="
+        w-full 
+        md:w-auto
+        cursor-pointer 
+        rounded-full 
+        border-[1px] 
+        py-2 
+        transition 
+        shadow-sm 
+        hover:shadow-md 
+      "
+    >
       <div className="flex flex-row items-center justify-between">
         <div className="px-6 text-sm font-semibold">anywhere</div>
-        <div className="hidden flex-1 border-x-[1px] px-6 text-center text-sm font-semibold sm:block">
+        <div
+          className="
+            hidden 
+            sm:block
+            flex-1 
+            border-x-[1px] 
+            px-6 
+            text-center 
+            text-sm 
+            font-semibold 
+          "
+        >
           duration
         </div>
-        <div className="flex flex-row items-center gap-3 pl-6 pr-2 text-sm text-gray-600">
+        <div
+          className="
+            flex 
+            flex-row 
+            items-center 
+            gap-3 
+            pl-6 
+            pr-2 
+            text-sm 
+            text-gray-600
+            "
+        >
           <div className="hidden sm:block">Gest</div>
           <div className="rounded-full bg-rose-500 p-2 text-white">
             <BiSearch size={18} />
