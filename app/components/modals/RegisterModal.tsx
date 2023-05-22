@@ -4,7 +4,9 @@ import axios from "axios"
 import { AiFillGithub } from "react-icons/ai"
 import { FcGoogle } from "react-icons/fc"
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form"
+import Heading from "../Heading"
 import useRegisterModal from "@/app/hooks/useRegisterModal"
+import Input from "@/app/components/inputs/Input"
 import Modal from "./Modal"
 
 const RegisterModal = () => {
@@ -34,7 +36,36 @@ const RegisterModal = () => {
       })
   }
 
-  const bodyContent = <div className="flex flex-col gap-4">Hello Body</div>
+  const bodyContent = (
+    <div className="flex flex-col gap-4">
+      <Heading title="Welcome to Airbnb" subtitle="Create an account" />
+      <Input
+        id="email"
+        label="Email"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="name"
+        label="Name"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="password"
+        label="Password"
+        type="password"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+    </div>
+  )
 
   return (
     <Modal
