@@ -5,7 +5,7 @@ import RegisterModal from "./components/modals/RegisterModal"
 import ToasterProvider from "./components/providers/ToasterProvider"
 import LoginModal from "./components/modals/LoginModal"
 import getCurrentUser from "./actions/getCurrentUser"
-import RentModal from "./components/modals/RentMOdal"
+import RentModal from "./components/modals/RentMoodal"
 
 const nunito = Nunito({ subsets: ["latin"] })
 
