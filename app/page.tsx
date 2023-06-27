@@ -8,7 +8,7 @@ import getCurrentUser from "@/app/actions/getCurrentUser"
 const Home = async () => {
   const listings = await getListings()
   const currentUser = await getCurrentUser()
-
+  
   if (listings.length === 0) {
     return <EmptyState showReset />
   }

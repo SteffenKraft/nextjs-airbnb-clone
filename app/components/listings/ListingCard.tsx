@@ -33,7 +33,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
 }) => {
   const router = useRouter()
   const { getByValue } = useCountries()
-
+  
   const location = getByValue(data.locationValue)
 
   const handleCancel = useCallback(
